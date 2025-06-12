@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet en Étude</title>
+  <style>
+    body {
+      background-color: #d3d3d3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .carousel-container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: auto;
+      background: black;
+      overflow: hidden;
+    }
+    .carousel-slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+      color: #42A9D3;
+      cursor: pointer;
+      user-select: none;
+    }
+    .arrow-left {
+      left: 10px;
+    }
+    .arrow-right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2><u><i>Projet en Étude :</i></u></h2>
+
+<div class="carousel-container">
+  <div class="carousel-slide"><img src="../photos/ex1.jpeg" alt="Image 1"></div>
+  <div class="carousel-slide"><img src="../photos/ex2.jpg" alt="Image 2"></div>
+  <div class="carousel-slide"><img src="../photos/fond_d_ecran.webp" alt="Image 3"></div>
+  
+  <span class="arrow arrow-left" onclick="changeSlide(-1)">&#10094;</span>
+  <span class="arrow arrow-right" onclick="changeSlide(1)">&#10095;</span>
+</div>
+
+<div style="background-color:#42A9D3; border: 1px solid black; padding: 20px; width: 60%; margin: auto; margin-top: 20px;">
+  <h3>Projet XAML et C# :</h3>
+  <p style="font-size: 1.2em;">
+    La SAE 2.01 est un projet en XAML et C# réalisé en duo.<br>
+    Cette SAE avait pour but de développer le jeu Quoridor en jeu vidéo avec une interface graphique.
+  </p>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".carousel-slide");
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.style.display = "none");
+    slides[index].style.display = "block";
+  }
+
+  function changeSlide(step) {
+    currentSlide = (currentSlide + step + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+
+  showSlide(currentSlide);
+</script>
+
+</body>
+</html>
