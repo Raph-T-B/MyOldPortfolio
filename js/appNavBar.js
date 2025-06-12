@@ -24,3 +24,19 @@ nav.addEventListener("mouseleave", () => {
     underline.style.width = "0";
   }
 });
+
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // Scroll vers le bas → cacher la navbar
+    nav.style.top = "-80px"; // ajuste selon la hauteur de ta nav
+  } else {
+    // Scroll vers le haut → montrer la navbar
+    nav.style.top = "0";
+  }
+
+  lastScroll = currentScroll;
+});

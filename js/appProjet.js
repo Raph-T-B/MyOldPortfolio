@@ -1,7 +1,10 @@
 const images = [
-  "../images/ex1.jpeg",
-  "../images/ex2.jpg",
-  "../images/fond_d_ecran.webp"
+  "../images/projets/home.png",
+  "../images/projets/rules.png",
+  "../images/projets/leaderboard.png",
+  "../images/projets/VSplayer.png",
+  "../images/projets/playing.png",
+  "../images/projets/end.png"
 ];
 
 let currentIndex = 0;
