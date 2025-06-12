@@ -10,8 +10,7 @@ steps:
   - name: code-analysis
     image: aosapps/drone-sonar-plugin
     settings: 
-      sonar_host:
-        from_secret: sonar_host
+      sonar_host: https://codefirst.iut.uca.fr/sonar
       sonar_token:
         from_secret: sonar_token_portfolio
 
