@@ -1,0 +1,45 @@
+.profil{
+    border-radius: 450px 450px;
+}
+
+.texte_index{
+    padding: 0 15%;
+    font-size: 25px;
+}
+
+.texte_titre{
+    padding: 0 25%;
+    font-size: 2em;
+}
+
+.item_index{
+    margin: 5% 20%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+}
+
+.img_index{
+    box-shadow: 2px 2px 8px white;
+    border-radius: 8px;
+}
+
+.titre_index{
+    font-size: 3em;
+}
+
+.diffComp{
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px 50px black;
+}
+
+.sectionWithImg{
+    display: flex;
+    align-items: center;
+}
+
+.sectionWithImg>.item_index{
+    margin: 5% 7%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+}
