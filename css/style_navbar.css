@@ -3,6 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #222;
+    width: 100%;
     height: 5em;
     padding: 0 2em;
     position: sticky;       /* sticky pour rester en haut */
