@@ -1,0 +1,26 @@
+.texte_cursus{
+    padding: 0 20%;
+    font-size: 25px;
+   
+}
+
+.item_cursus{
+    margin: 5% 20%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+}
+
+.item_cursus>img{
+    box-shadow: 2px 2px 8px white;
+    border-radius: 8px;
+}
+
+.titre_cursus{
+    font-size: 3em;
+}
+
+.diffCursus{
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px 50px black;
+}
